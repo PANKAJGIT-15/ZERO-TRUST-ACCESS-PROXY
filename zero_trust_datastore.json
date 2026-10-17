@@ -1,0 +1,3733 @@
+{
+    "sessions": {
+        "user_beta": {
+            "status": "ACTIVE_VERIFIED",
+            "risk_score": 15,
+            "last_verified": "2026-10-11T14:10:33.203226"
+        },
+        "user_alpha": {
+            "status": "MFA_CHALLENGE_REQUIRED",
+            "risk_score": 60,
+            "updated_at": "2026-10-11T14:10:35.638828"
+        },
+        "attacker_x": {
+            "status": "BLOCKED",
+            "risk_score": 100,
+            "reason": "Anomaly Threshold Exceeded",
+            "updated_at": "2026-10-11T14:10:34.463513"
+        },
+        "compromised_session": {
+            "status": "BLOCKED",
+            "risk_score": 94,
+            "reason": "Anomaly Threshold Exceeded",
+            "updated_at": "2026-10-11T14:03:04.064525"
+        }
+    },
+    "audit_logs": [
+        {
+            "timestamp": "2026-10-11T13:55:11.018182",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:11.014032",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.37,
+                "inter_arrival_sec": 1.726
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:12.746231",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:12.740668",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.05,
+                "inter_arrival_sec": 1.379
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:14.125990",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:14.120158",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.32,
+                "inter_arrival_sec": 0.839
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:14.963905",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:14.959230",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.56,
+                "inter_arrival_sec": 1.1
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:16.064521",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:16.060182",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.31,
+                "inter_arrival_sec": 0.91
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:16.975721",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:16.970595",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.46,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:17.011050",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:17.003104",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.36,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:17.041961",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:17.035903",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.22,
+                "inter_arrival_sec": 1.054
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:18.097794",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:18.091416",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.8,
+                "inter_arrival_sec": 0.882
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:18.980684",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:18.975470",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.69,
+                "inter_arrival_sec": 1.168
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:20.148316",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:20.143594",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.64,
+                "inter_arrival_sec": 1.32
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:21.469691",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:21.465212",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.27,
+                "inter_arrival_sec": 1.522
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:22.994166",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:22.988190",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.92,
+                "inter_arrival_sec": 1.396
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:24.389537",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:24.385098",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.33,
+                "inter_arrival_sec": 0.04
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:24.430382",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:24.425441",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.29,
+                "inter_arrival_sec": 1.262
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:25.693227",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:25.688757",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.79,
+                "inter_arrival_sec": 1.295
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:26.993841",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:26.984859",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 23.77,
+                "inter_arrival_sec": 0.029
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:27.020447",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:27.014483",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 24.17,
+                "inter_arrival_sec": 0.043
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:27.064571",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:27.058491",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.5,
+                "inter_arrival_sec": 0.015
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:27.079856",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:27.074885",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.9,
+                "inter_arrival_sec": 1.273
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:28.354843",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:28.349216",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.27,
+                "inter_arrival_sec": 1.23
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:29.585049",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:29.579847",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.73,
+                "inter_arrival_sec": 1.43
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:31.015373",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:31.010446",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.11,
+                "inter_arrival_sec": 0.012
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:31.028198",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:31.022974",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.1,
+                "inter_arrival_sec": 1.005
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:32.034606",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:32.028536",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.96,
+                "inter_arrival_sec": 1.311
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:33.346029",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:33.341321",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.73,
+                "inter_arrival_sec": 1.521
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:34.870155",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:34.863834",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.94,
+                "inter_arrival_sec": 1.085
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:35.955061",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:35.950516",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 21.46,
+                "inter_arrival_sec": 0.04
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:35.995314",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:35.990723",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.33,
+                "inter_arrival_sec": 1.636
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:37.632724",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:37.628358",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.41,
+                "inter_arrival_sec": 1.522
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:39.155706",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:39.151199",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.87,
+                "inter_arrival_sec": 1.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:40.192290",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:40.187780",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.29,
+                "inter_arrival_sec": 1.72
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:41.912800",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:41.908710",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.57,
+                "inter_arrival_sec": 0.049
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:41.963717",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:41.958686",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.49,
+                "inter_arrival_sec": 1.8
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:43.763601",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:43.759519",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.44,
+                "inter_arrival_sec": 0.991
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:44.756861",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:44.750647",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.49,
+                "inter_arrival_sec": 1.33
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:46.085184",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:46.081029",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.36,
+                "inter_arrival_sec": 1.521
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:47.608197",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:47.603096",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.3,
+                "inter_arrival_sec": 1.756
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:49.365166",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:49.360802",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.24,
+                "inter_arrival_sec": 0.015
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:49.381772",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:49.376449",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.82,
+                "inter_arrival_sec": 1.165
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:50.548210",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:50.543128",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.57,
+                "inter_arrival_sec": 0.042
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:50.590161",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:50.585653",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 10.17,
+                "inter_arrival_sec": 0.017
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:50.608064",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:50.603276",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 10.59,
+                "inter_arrival_sec": 0.035
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:50.644161",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:50.638876",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 18.85,
+                "inter_arrival_sec": 0.033
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:50.677379",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:50.672061",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.28,
+                "inter_arrival_sec": 1.723
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:52.401050",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:52.396591",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.88,
+                "inter_arrival_sec": 0.033
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:52.436595",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:52.430406",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.37,
+                "inter_arrival_sec": 1.133
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:53.568834",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:53.564193",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 24.06,
+                "inter_arrival_sec": 0.05
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:53.619906",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:53.614555",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 11.31,
+                "inter_arrival_sec": 0.025
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:53.644718",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:53.640340",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.93,
+                "inter_arrival_sec": 1.438
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:55.144951",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:55.079545",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.84,
+                "inter_arrival_sec": 0.034
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:55.151110",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:55.141537",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 12.13,
+                "inter_arrival_sec": 0.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:55.182885",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:55.177771",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.31,
+                "inter_arrival_sec": 1.457
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:56.640940",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:56.636421",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.19,
+                "inter_arrival_sec": 1.053
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:57.693815",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:57.689708",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.51,
+                "inter_arrival_sec": 0.037
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:57.732947",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:57.727320",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.55,
+                "inter_arrival_sec": 1.287
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:59.021190",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:55:59.015287",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 20.85,
+                "inter_arrival_sec": 0.012
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:55:59.035076",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:55:59.027512",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.53,
+                "inter_arrival_sec": 1.656
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:00.690957",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:00.684623",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.09,
+                "inter_arrival_sec": 0.028
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:00.724966",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:00.712527",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 12.26,
+                "inter_arrival_sec": 0.02
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:00.742398",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:00.733331",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.86,
+                "inter_arrival_sec": 0.047
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:00.787132",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:00.780553",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.22,
+                "inter_arrival_sec": 1.601
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:02.387565",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:02.382891",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.44,
+                "inter_arrival_sec": 1.727
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:04.114381",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:04.109737",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 15.31,
+                "inter_arrival_sec": 0.044
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:04.158240",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:04.153958",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.05,
+                "inter_arrival_sec": 1.277
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:05.441870",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:05.432180",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.78,
+                "inter_arrival_sec": 0.968
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:06.404539",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T13:56:06.400373",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.14,
+                "inter_arrival_sec": 1.774
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:08.180311",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:08.174594",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.74,
+                "inter_arrival_sec": 0.865
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:09.045525",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:09.040369",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.58,
+                "inter_arrival_sec": 0.015
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:09.063518",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:09.056763",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.48,
+                "inter_arrival_sec": 1.609
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:10.671854",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:10.667226",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.53,
+                "inter_arrival_sec": 1.784
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:12.457697",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:12.453228",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.83,
+                "inter_arrival_sec": 1.381
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:13.840137",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:13.835770",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.1,
+                "inter_arrival_sec": 0.892
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:14.734210",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:14.729202",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.2,
+                "inter_arrival_sec": 0.863
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:15.597483",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:15.592489",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.44,
+                "inter_arrival_sec": 1.145
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:16.741904",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:16.737568",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 11.52,
+                "inter_arrival_sec": 0.044
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:16.788127",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:16.782543",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.68,
+                "inter_arrival_sec": 1.069
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:17.857616",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:17.853060",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.8,
+                "inter_arrival_sec": 0.031
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:17.889110",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:17.884592",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.25,
+                "inter_arrival_sec": 0.019
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:17.907703",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:17.903652",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 11.45,
+                "inter_arrival_sec": 0.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:17.944558",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:17.939967",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.02,
+                "inter_arrival_sec": 1.347
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:19.293612",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:19.288630",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 23.37,
+                "inter_arrival_sec": 0.014
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:19.313251",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:19.303410",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 15.82,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:19.342870",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:19.336719",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.89,
+                "inter_arrival_sec": 1.644
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:20.985842",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:20.981675",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.39,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:21.019089",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:21.014440",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 15.21,
+                "inter_arrival_sec": 0.021
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:21.043746",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:21.036001",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.51,
+                "inter_arrival_sec": 0.981
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:22.022260",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:22.017661",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 23.13,
+                "inter_arrival_sec": 0.016
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:22.041320",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:22.033848",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 17.03,
+                "inter_arrival_sec": 0.021
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:22.064173",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:22.055255",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.05,
+                "inter_arrival_sec": 1.74
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:23.802419",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:23.796308",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.96,
+                "inter_arrival_sec": 0.049
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:23.851216",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:23.845567",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.93,
+                "inter_arrival_sec": 1.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:24.891655",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:24.882459",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 21.22,
+                "inter_arrival_sec": 0.027
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:24.918654",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:24.910679",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.86,
+                "inter_arrival_sec": 0.048
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:24.965083",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:24.959070",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.05,
+                "inter_arrival_sec": 1.579
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:26.543892",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:26.538147",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.05,
+                "inter_arrival_sec": 0.011
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:26.557655",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:26.549928",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.07,
+                "inter_arrival_sec": 0.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:26.592575",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T13:56:26.586423",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.18,
+                "inter_arrival_sec": 1.757
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:28.349826",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:28.343760",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 11.42,
+                "inter_arrival_sec": 0.022
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:28.372477",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:28.366144",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.02,
+                "inter_arrival_sec": 1.404
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:29.776737",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:29.770771",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.74,
+                "inter_arrival_sec": 1.43
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:31.208139",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:31.200787",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.46,
+                "inter_arrival_sec": 0.85
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:32.057741",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:32.051059",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.07,
+                "inter_arrival_sec": 1.565
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:33.622505",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:33.616796",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.0,
+                "inter_arrival_sec": 1.045
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:34.669151",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:34.662400",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.89,
+                "inter_arrival_sec": 1.544
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:36.214058",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:36.208208",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.09,
+                "inter_arrival_sec": 0.953
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:37.168910",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:37.161643",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.46,
+                "inter_arrival_sec": 1.488
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:38.656434",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:38.650770",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.97,
+                "inter_arrival_sec": 1.258
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:39.915456",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:39.909509",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.45,
+                "inter_arrival_sec": 0.963
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:40.879042",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:40.872927",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 23.68,
+                "inter_arrival_sec": 0.048
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:40.927845",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:40.921180",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.39,
+                "inter_arrival_sec": 1.317
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:42.245052",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:42.238502",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.59,
+                "inter_arrival_sec": 0.034
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:42.287473",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:42.273406",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.04,
+                "inter_arrival_sec": 1.411
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:43.691162",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:43.684864",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.36,
+                "inter_arrival_sec": 0.807
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:44.498998",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T13:56:44.491796",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.23,
+                "inter_arrival_sec": 1.742
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:46.239134",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:46.234747",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.52,
+                "inter_arrival_sec": 0.046
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:46.285618",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:46.280795",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.84,
+                "inter_arrival_sec": 0.035
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:46.321048",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:46.316180",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 10.38,
+                "inter_arrival_sec": 0.015
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:46.336244",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:46.331350",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.78,
+                "inter_arrival_sec": 0.039
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:46.374862",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:46.370482",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.61,
+                "inter_arrival_sec": 1.015
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:47.395174",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:47.386026",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.49,
+                "inter_arrival_sec": 1.267
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:48.659763",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:48.653489",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.54,
+                "inter_arrival_sec": 1.342
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:50.002848",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:49.995731",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.62,
+                "inter_arrival_sec": 1.088
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:51.090747",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:51.084249",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 20.23,
+                "inter_arrival_sec": 0.01
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:51.102705",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:51.095732",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.49,
+                "inter_arrival_sec": 1.509
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:52.611547",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:52.605682",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 20.25,
+                "inter_arrival_sec": 0.019
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:52.633706",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:52.624915",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.48,
+                "inter_arrival_sec": 0.89
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:53.521875",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:53.515522",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 20.51,
+                "inter_arrival_sec": 0.045
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:53.567875",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:53.561344",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.62,
+                "inter_arrival_sec": 0.864
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:54.432581",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:54.426060",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.98,
+                "inter_arrival_sec": 1.504
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:55.937722",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:56:55.931063",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.27,
+                "inter_arrival_sec": 0.025
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:55.967872",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:55.957209",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.49,
+                "inter_arrival_sec": 1.46
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:57.424830",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:57.417801",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.47,
+                "inter_arrival_sec": 1.469
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:58.893119",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:58.887049",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.04,
+                "inter_arrival_sec": 0.984
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:56:59.878031",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:56:59.871236",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.08,
+                "inter_arrival_sec": 1.418
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:01.295917",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:01.289471",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.49,
+                "inter_arrival_sec": 0.016
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:01.318711",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:01.306184",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.86,
+                "inter_arrival_sec": 1.698
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:03.010885",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:03.004603",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.25,
+                "inter_arrival_sec": 1.172
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:04.184014",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:04.177147",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.14,
+                "inter_arrival_sec": 1.429
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:05.612709",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:05.606517",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.66,
+                "inter_arrival_sec": 1.406
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:07.019711",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:07.014000",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 13.15,
+                "inter_arrival_sec": 0.046
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:07.069385",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:07.060567",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.32,
+                "inter_arrival_sec": 1.305
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:08.372321",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:08.366244",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 17.06,
+                "inter_arrival_sec": 0.018
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:08.392379",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:08.385367",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.07,
+                "inter_arrival_sec": 0.03
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:08.422556",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:08.415995",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 24.45,
+                "inter_arrival_sec": 0.041
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:08.467359",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:08.457750",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.94,
+                "inter_arrival_sec": 1.217
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:09.681461",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:09.675377",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 15.45,
+                "inter_arrival_sec": 0.016
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:09.699490",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:09.692273",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.88,
+                "inter_arrival_sec": 1.455
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:11.153443",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:11.147854",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.54,
+                "inter_arrival_sec": 0.021
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:11.180286",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:11.169446",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 13.22,
+                "inter_arrival_sec": 0.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:11.220307",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:11.206843",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.82,
+                "inter_arrival_sec": 1.687
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:12.900352",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:12.894139",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.13,
+                "inter_arrival_sec": 1.595
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:14.495208",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:14.489320",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.46,
+                "inter_arrival_sec": 0.804
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:15.300661",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:15.294097",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.25,
+                "inter_arrival_sec": 0.04
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:15.342085",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:15.334595",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.29,
+                "inter_arrival_sec": 1.564
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:16.905718",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:16.899111",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.87,
+                "inter_arrival_sec": 0.888
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:17.793634",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:17.787327",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 11.06,
+                "inter_arrival_sec": 0.034
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:17.830505",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:17.821834",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.26,
+                "inter_arrival_sec": 1.027
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:18.855983",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:18.849731",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.46,
+                "inter_arrival_sec": 1.152
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:20.008696",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:20.002224",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.25,
+                "inter_arrival_sec": 0.037
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:20.045094",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:20.039119",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.34,
+                "inter_arrival_sec": 0.037
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:20.082981",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:20.076644",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.57,
+                "inter_arrival_sec": 1.504
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:21.587450",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:21.581232",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 18.91,
+                "inter_arrival_sec": 0.045
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:21.634647",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:21.626997",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.21,
+                "inter_arrival_sec": 0.856
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:22.489774",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:22.483446",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.22,
+                "inter_arrival_sec": 0.034
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:22.524616",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:22.518396",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.48,
+                "inter_arrival_sec": 0.04
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:22.565365",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:22.559455",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.25,
+                "inter_arrival_sec": 1.649
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:24.215369",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:24.209215",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.13,
+                "inter_arrival_sec": 1.512
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:25.728153",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T13:57:25.722170",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 18.31,
+                "inter_arrival_sec": 0.045
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:25.773469",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:25.767426",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.22,
+                "inter_arrival_sec": 0.85
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:26.625304",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:26.618066",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.58,
+                "inter_arrival_sec": 1.525
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:28.149604",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:28.143833",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.45,
+                "inter_arrival_sec": 1.099
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:29.251291",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:29.243098",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.25,
+                "inter_arrival_sec": 1.277
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:30.527712",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:30.521232",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.82,
+                "inter_arrival_sec": 1.079
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:31.609589",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:31.600849",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.13,
+                "inter_arrival_sec": 1.209
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:32.816465",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:32.810484",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.75,
+                "inter_arrival_sec": 1.271
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:34.089417",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:34.082320",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.25,
+                "inter_arrival_sec": 1.561
+            }
+        },
+        {
+            "timestamp": "2026-10-11T13:57:35.649972",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T13:57:35.644513",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.68,
+                "inter_arrival_sec": 1.648
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:03:04.064518",
+            "user_id": "compromised_session",
+            "client_ip": "198.51.100.42",
+            "risk_score": 94,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:03:04.064489+00:00",
+                "user_id": "compromised_session",
+                "client_ip": "198.51.100.42",
+                "endpoint": "/admin/vault/export",
+                "payload_kb": 22.4,
+                "inter_arrival_sec": 0.02
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:41.414436",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:41.409624",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.35,
+                "inter_arrival_sec": 0.027
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:41.443065",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:41.437278",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.77,
+                "inter_arrival_sec": 1.088
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:42.530417",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:42.525462",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.42,
+                "inter_arrival_sec": 1.154
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:43.686328",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:43.680964",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.41,
+                "inter_arrival_sec": 0.042
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:43.727802",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:43.723275",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.74,
+                "inter_arrival_sec": 1.064
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:44.793496",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:44.788763",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.35,
+                "inter_arrival_sec": 1.096
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:45.890505",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:45.885647",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 17.72,
+                "inter_arrival_sec": 0.028
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:45.921024",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:45.914376",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 10.69,
+                "inter_arrival_sec": 0.017
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:45.936997",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:45.932153",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.56,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:45.975290",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:45.964792",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 13.63,
+                "inter_arrival_sec": 0.048
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:46.019221",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:46.013397",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.28,
+                "inter_arrival_sec": 1.359
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:47.377252",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:47.372737",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.28,
+                "inter_arrival_sec": 1.473
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:48.851586",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T14:09:48.846465",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.18,
+                "inter_arrival_sec": 1.769
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:50.620232",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:50.615806",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.16,
+                "inter_arrival_sec": 1.513
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:52.137505",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:52.129195",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.31,
+                "inter_arrival_sec": 1.044
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:53.179401",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:53.174100",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 23.66,
+                "inter_arrival_sec": 0.013
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:53.192904",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:09:53.187572",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.18,
+                "inter_arrival_sec": 0.042
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:53.233688",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:53.229861",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.18,
+                "inter_arrival_sec": 1.317
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:54.552984",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:54.548520",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.76,
+                "inter_arrival_sec": 1.318
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:55.873250",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:55.868248",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.0,
+                "inter_arrival_sec": 1.367
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:57.240696",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:57.235386",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.42,
+                "inter_arrival_sec": 0.918
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:58.158788",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:58.154257",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.86,
+                "inter_arrival_sec": 1.369
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:09:59.528967",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:09:59.523690",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.7,
+                "inter_arrival_sec": 1.219
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:00.749343",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:00.743872",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.4,
+                "inter_arrival_sec": 0.981
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:01.730807",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:01.725037",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.91,
+                "inter_arrival_sec": 0.919
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:02.650268",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T14:10:02.644488",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.34,
+                "inter_arrival_sec": 1.769
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:04.418494",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:04.414267",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.48,
+                "inter_arrival_sec": 1.108
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:05.527197",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:05.522864",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.47,
+                "inter_arrival_sec": 1.3
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:06.828974",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:06.823939",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.2,
+                "inter_arrival_sec": 1.211
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:08.039855",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:08.034920",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 24.64,
+                "inter_arrival_sec": 0.023
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:08.062760",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:08.057989",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.06,
+                "inter_arrival_sec": 1.254
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:09.316395",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:09.312293",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.94,
+                "inter_arrival_sec": 0.037
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:09.354175",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:09.349441",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 22.33,
+                "inter_arrival_sec": 0.031
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:09.386205",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:09.381227",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.64,
+                "inter_arrival_sec": 0.048
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:09.433683",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:09.429285",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.2,
+                "inter_arrival_sec": 0.959
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:10.394348",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:10.389351",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.26,
+                "inter_arrival_sec": 1.046
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:11.441736",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:11.435931",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.54,
+                "inter_arrival_sec": 0.038
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:11.479428",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:11.474814",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 19.33,
+                "inter_arrival_sec": 0.011
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:11.491482",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:11.486234",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 9.6,
+                "inter_arrival_sec": 0.014
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:11.506224",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:11.500916",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.69,
+                "inter_arrival_sec": 1.342
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:12.848140",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:12.843276",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.55,
+                "inter_arrival_sec": 1.483
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:14.332654",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:14.327960",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 12.18,
+                "inter_arrival_sec": 0.033
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:14.370560",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:14.361611",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.72,
+                "inter_arrival_sec": 1.782
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:16.149874",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:16.144845",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 15.84,
+                "inter_arrival_sec": 0.049
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:16.199811",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:16.194191",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 10.73,
+                "inter_arrival_sec": 0.032
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:16.232175",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:16.227134",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.38,
+                "inter_arrival_sec": 1.021
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:17.253084",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:17.248102",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.69,
+                "inter_arrival_sec": 0.957
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:18.210709",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:18.205728",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.28,
+                "inter_arrival_sec": 0.014
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:18.279419",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:18.219643",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.42,
+                "inter_arrival_sec": 1.3
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:19.531023",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T14:10:19.520229",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.28,
+                "inter_arrival_sec": 1.724
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:21.251884",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:21.245295",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.92,
+                "inter_arrival_sec": 0.045
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:21.296769",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:21.291152",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.75,
+                "inter_arrival_sec": 1.23
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:22.530340",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:22.521080",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.7,
+                "inter_arrival_sec": 1.194
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:23.727618",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:23.715446",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.87,
+                "inter_arrival_sec": 0.033
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:23.755812",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:23.749175",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.32,
+                "inter_arrival_sec": 1.415
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:25.177045",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:25.165226",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.67,
+                "inter_arrival_sec": 1.129
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:26.302846",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:26.294703",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 8.23,
+                "inter_arrival_sec": 0.037
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:26.341493",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:26.332067",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 0.92,
+                "inter_arrival_sec": 1.698
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:28.036651",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:28.030825",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.42,
+                "inter_arrival_sec": 0.999
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:29.039397",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:29.030795",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.4,
+                "inter_arrival_sec": 0.036
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:29.074150",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:29.067426",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 1.07,
+                "inter_arrival_sec": 1.289
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:30.362247",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:30.357039",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.49,
+                "inter_arrival_sec": 1.149
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:31.511033",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:31.506168",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 16.45,
+                "inter_arrival_sec": 0.021
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:31.534294",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:31.528177",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/profile",
+                "payload_kb": 1.25,
+                "inter_arrival_sec": 1.67
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:33.203218",
+            "user_id": "user_beta",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:33.198283",
+                "user_id": "user_beta",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.44,
+                "inter_arrival_sec": 1.259
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:34.463507",
+            "user_id": "attacker_x",
+            "client_ip": "45.33.32.156",
+            "risk_score": 100,
+            "action_taken": "TERMINATE_SESSION_BLOCK_IP",
+            "details": {
+                "timestamp": "2026-10-11T14:10:34.457975",
+                "user_id": "attacker_x",
+                "client_ip": "45.33.32.156",
+                "endpoint": "/admin/database/dump",
+                "payload_kb": 14.64,
+                "inter_arrival_sec": 0.018
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:34.481072",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 15,
+            "action_taken": "ALLOW_REQUEST",
+            "details": {
+                "timestamp": "2026-10-11T14:10:34.476198",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.71,
+                "inter_arrival_sec": 1.156
+            }
+        },
+        {
+            "timestamp": "2026-10-11T14:10:35.638823",
+            "user_id": "user_alpha",
+            "client_ip": "192.168.1.10",
+            "risk_score": 60,
+            "action_taken": "REQUIRE_STEPUP_MFA",
+            "details": {
+                "timestamp": "2026-10-11T14:10:35.633475",
+                "user_id": "user_alpha",
+                "client_ip": "192.168.1.10",
+                "endpoint": "/api/dashboard",
+                "payload_kb": 0.2,
+                "inter_arrival_sec": 1.739
+            }
+        }
+    ]
+}
